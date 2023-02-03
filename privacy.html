@@ -16,7 +16,11 @@
       <ul>
          <li>
             <a
+<<<<<<< HEAD
                href="https://api.whatsapp.com/send?phone=+918104983151&text=Hi, I saw details of project from Prestige Bellanza | Yogi Hills Mulund website - http://prestigebellanza.co.in/, kindly call me back. I am interested in buying a new property.">
+=======
+               href="https://api.whatsapp.com/send?phone=+919820467778&text=Hi, I saw details of project from Prestige Bellanza | Yogi Hills Mulund website - http://prestigebellanza.co.in/, kindly call me back. I am interested in buying a new property.">
+>>>>>>> d6b7253833b74c0710a795bd026f3044219e86e3
                <div class="sheak">
                   <img src="images/whatsapp.svg" alt="whatsapp">
                </div>
@@ -191,7 +195,11 @@
 
    <div class="copyrights bg-dark text-center">
       <div class="container">
+<<<<<<< HEAD
          <p>© 2023 Prestige Bellanza | Yogi Hills Mulund</p>
+=======
+         <p>© 2022 Prestige Bellanza | Yogi Hills Mulund</p>
+>>>>>>> d6b7253833b74c0710a795bd026f3044219e86e3
          <p class="disclaimer">Disclaimer &amp; <a href="privacy-policy.php">Privacy Policy</a>: This is not an official
             website. It is created for advertisement purpose only.</p>
       </div>
@@ -211,16 +219,28 @@
                         <div class="form-group">
                            <label class="lab">Name*</label>
                            <input type="text" name="name" id="name" placeholder="Name">
+<<<<<<< HEAD
                         </div>
                      </div>
                      <div class="col-md-12">
                         <div class="form-group">
                            <label class="lab">Mobile*</label>
                            <input type="text" name="mobile" id="mobile" placeholder="Mobile">
+=======
+>>>>>>> d6b7253833b74c0710a795bd026f3044219e86e3
                         </div>
                      </div>
                      <div class="col-md-12">
                         <div class="form-group">
+<<<<<<< HEAD
+=======
+                           <label class="lab">Mobile*</label>
+                           <input type="text" name="mobile" id="mobile" placeholder="Mobile">
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div class="form-group">
+>>>>>>> d6b7253833b74c0710a795bd026f3044219e86e3
                            <label class="lab">Email*</label>
                            <input type="text" name="email" id="email" placeholder="Email">
                         </div>
@@ -274,6 +294,7 @@
             var ifEmailText = `, %0AEmail: ${email}`
          } else {
             var ifEmailText = ""
+<<<<<<< HEAD
          }
          if (name && mobile) {
             var message2 = `Hi, %0A%0AMy name is ${name}, %0AMobile: ${mobile}${ifEmailText}. %0A%0AKindly contact me back. I am interested in buying a new property.`;
@@ -288,6 +309,22 @@
          var email = document.getElementById("email").value;
          message(name, mobile, email)
       }
+=======
+         }
+         if (name && mobile) {
+            var message2 = `Hi, %0A%0AMy name is ${name}, %0AMobile: ${mobile}${ifEmailText}. %0A%0AKindly contact me back. I am interested in buying a new property.`;
+            window.open("https://api.whatsapp.com/send?phone=+919820467778&text=" + message2, '_blank');
+         } else {
+            alert("Please enter your name and mobile number.")
+         }
+      }
+      function contactForm() {
+         var name = document.getElementById("name").value;
+         var mobile = document.getElementById("mobile").value;
+         var email = document.getElementById("email").value;
+         message(name, mobile, email)
+      }
+>>>>>>> d6b7253833b74c0710a795bd026f3044219e86e3
       function olaWhatsApp() {
          var name = document.getElementById("ola_name").value;
          var mobile = document.getElementById("ola_mobile").value;
