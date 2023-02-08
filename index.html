@@ -63,7 +63,7 @@
                     </a>
                     <a href="tel:+918104983151">
                         <div class="phone_number"><img src="images/phnT.svg" class="svg" alt="phone" /> <span>+91
-                            8104983151</span></div>
+                                8104983151</span></div>
                     </a>
                 </div>
                 <div class="nav-bg-xbootstrap">
@@ -424,23 +424,22 @@
             <div class="cont-box">
                 <div class="enquery-form">
                     <h5>Enquire Now</h5>
-                    <form id="bottomform" onsubmit="return false;">
+                    <form method="POST" data-netlify="true" id="bottomform">
                         <div class="row">
                             <div class="form-group col-md-12 m-0 p-2">
                                 <input type="text" class="form-control" maxlength="25" name="name" id="enquire_name"
-                                    placeholder="Your Name*" required="" />
+                                    placeholder="Your Name*" required />
                             </div>
                             <div class="form-group col-md-12 m-0 p-2">
                                 <input type="tel" class="form-control phoneNumberNumeric" name="mobile"
-                                    id="enquire_mobile" placeholder="Mobile No*" required="" maxlength="10" />
+                                    id="enquire_mobile" placeholder="Mobile No*" required maxlength="10" />
                             </div>
                             <div class="form-group col-md-12 m-0 p-2">
                                 <input class="form-control" name="email" id="enquire_email" type="email"
                                     placeholder="Email ID" />
                             </div>
                             <div class="form-group col-md-3 col-4 m-0 p-2">
-                                <button type="submit" onclick="enquireWhatsApp()"
-                                    class="theme-btn btn-style-one">Submit</button>
+                                <button type="submit" class="theme-btn btn-style-one">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -464,33 +463,30 @@
                     <h4 class="modal-title"><span>Please fill your details</span></h4>
                 </div>
                 <div class="modal-body enquery-form">
-                    <form id="popupform" name="popupform" method="POST" role="form">
-                        <input type="hidden" name="srd" value="63240825c825615ed286686c" />
-
+                    <form method="POST" data-netlify="true" id="popupform" name="popupform" method="POST" role="form">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="lab">Name*</label>
-                                    <input type="text" name="name" id="enquire_name1" placeholder="Name" />
+                                    <input type="text" name="name" required id="enquire_name1" placeholder="Name" />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="lab">Mobile*</label>
-                                    <input type="text" name="mobile" id="enquire_mobile1" placeholder="Mobile" />
+                                    <input type="text" name="mobile" required id="enquire_mobile1"
+                                        placeholder="Mobile" />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="lab">Email</label>
-                                    <input type="text" name="email" id="enquire_email1" placeholder="Email" />
+                                    <input type="text" name="email" required id="enquire_email1" placeholder="Email" />
                                 </div>
                             </div>
                         </div>
                         <div class="text-right">
-                            <span id="popupresponse"></span>
-                            <button type="button" class="theme-btn btn-style-one"
-                                onclick="enquireWhatsApp1()">Submit</button>
+                            <button type="submit" class="theme-btn btn-style-one">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -506,18 +502,18 @@
                     <h4 class="modal-title"><span>To Download Brochure Please fill your details</span></h4>
                 </div>
                 <div class="modal-body enquery-form">
-                    <form id="downloadform" name="downloadform">
+                    <form method="POST" data-netlify="true" id="downloadform" name="downloadform">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="lab">Name*</label>
-                                    <input type="text" name="name" id="brochure_name" placeholder="Name">
+                                    <input type="text" name="name" required id="brochure_name" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="lab">Mobile*</label>
-                                    <input type="text" name="mobile" id="brochure_mobile" placeholder="Mobile">
+                                    <input type="text" name="mobile" required id="brochure_mobile" placeholder="Mobile">
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -528,8 +524,7 @@
                             </div>
                         </div>
                         <div class="text-right">
-                            <button type="button" class="theme-btn btn-style-one"
-                                onclick="downloadBrochure()">Submit</button>
+                            <button type="submit" class="theme-btn btn-style-one">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -548,17 +543,17 @@
                 </div>
             </div>
         </div>
-        <form>
+        <form method="POST" data-netlify="true">
             <div class="form-group">
-                <input type="text" name="name" id="ola_name" placeholder="Name*" />
+                <input type="text" name="name" id="ola_name" required placeholder="Name*" />
             </div>
             <div class="form-group">
-                <input type="text" name="mobile" id="ola_mobile" placeholder="Mobile No*" />
+                <input type="text" name="mobile" id="ola_mobile" required placeholder="Mobile No*" />
             </div>
             <div class="form-group">
                 <input type="email" name="email" id="ola_email" placeholder="E-mail" />
             </div>
-            <button type="button" onclick="olaWhatsApp()">Submit<span id="getinresponse"></span></button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 
@@ -626,7 +621,7 @@
                 alert("Please enter your name and mobile number.")
             }
         }
-        function downloadBrochure(){
+        function downloadBrochure() {
             var name = document.getElementById("brochure_name").value;
             var mobile = document.getElementById("brochure_mobile").value;
             var email = document.getElementById("brochure_email").value;
@@ -638,24 +633,24 @@
             var mobile = document.getElementById("enquire_mobile").value;
             var email = document.getElementById("enquire_email").value;
             var message1 = ''
-            message(name, mobile, email, message1)      
-          }
+            message(name, mobile, email, message1)
+        }
 
         function enquireWhatsApp1() {
             var name = document.getElementById("enquire_name1").value;
             var mobile = document.getElementById("enquire_mobile1").value;
             var email = document.getElementById("enquire_email1").value;
             var message1 = ''
-            message(name, mobile, email, message1)       
-         }
+            message(name, mobile, email, message1)
+        }
 
         function olaWhatsApp() {
             var name = document.getElementById("ola_name").value;
             var mobile = document.getElementById("ola_mobile").value;
             var email = document.getElementById("ola_email").value;
             var message1 = ''
-            message(name, mobile, email, message1)    
-            }         
+            message(name, mobile, email, message1)
+        }         
     </script>
 </body>
 

@@ -205,7 +205,7 @@
                <h4 class="modal-title"><span>Please fill your details</span></h4>
             </div>
             <div class="modal-body enquery-form">
-               <form id="popupform" >
+               <form id="popupform" method="POST" data-netlify="true">
                   <div class="row">
                      <div class="col-md-12">
                         <div class="form-group">
@@ -227,7 +227,7 @@
                      </div>
                   </div>
                   <div class="text-right"><span id="popupresponse"></span>
-                     <button class="theme-btn btn-style-one" onclick="contactForm()">Submit</button>
+                     <button class="theme-btn btn-style-one">Submit</button>
                   </div>
                </form>
             </div>
@@ -248,7 +248,7 @@
             </div>
          </div>
       </div>
-      <form>
+      <form method="POST" data-netlify="true">
 
          <div class="form-group">
             <input type="text" name="name" id="ola_name" placeholder="Name*" />
@@ -259,7 +259,7 @@
          <div class="form-group">
             <input type="email" name="email" id="ola_email" placeholder="E-mail" />
          </div>
-         <button class="theme-btn btn-style-one" onclick="olaWhatsApp()">Submit </button>
+         <button class="theme-btn btn-style-one">Submit </button>
       </form>
    </div>
 
@@ -268,48 +268,48 @@
    <script src="js/scrollIt.min.js"></script>
    <script src="js/main.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-     <script>
-        $('.navbar-collapse a').click(function () {
-            $(".navbar-collapse").collapse('hide');
-        });
+   <script>
+      $('.navbar-collapse a').click(function () {
+         $(".navbar-collapse").collapse('hide');
+      });
 
 
-        <!--Main-Nav-Bar-->
-        $(document).ready(function () {
-            $('.navbar-xbootstrap').click(function () {
-                $('.nav-xbootstrap').toggleClass('visible');
-                $('.overly').toggleClass('cover-bg');
-            });
-        });
+      <!--Main-Nav-Bar-->
+      $(document).ready(function () {
+         $('.navbar-xbootstrap').click(function () {
+            $('.nav-xbootstrap').toggleClass('visible');
+            $('.overly').toggleClass('cover-bg');
+         });
+      });
 
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
+      function myFunction(x) {
+         x.classList.toggle("change");
+      }
+   </script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            // let's Hide Items
-            $(".cc-contactpop form").hide();
-            $(".cc-contactpop i").hide();
-            $(".cc-contactpop .box").show();
+   <script type="text/javascript">
+      $(document).ready(function () {
+         // let's Hide Items
+         $(".cc-contactpop form").hide();
+         $(".cc-contactpop i").hide();
+         $(".cc-contactpop .box").show();
 
-            // Show on elements ".slideDown"
-            $(".cc-contactpop").click(function () {
-                $(".cc-contactpop form").slideDown(500);
-                $(".cc-contactpop .box").slideDown(500);
-                $(".cc-contactpop i").slideDown(500);
-            });
+         // Show on elements ".slideDown"
+         $(".cc-contactpop").click(function () {
+            $(".cc-contactpop form").slideDown(500);
+            $(".cc-contactpop .box").slideDown(500);
+            $(".cc-contactpop i").slideDown(500);
+         });
 
-            // Close Hidden Part
-            $(".cc-contactpop i").click(function () {
-                $(this).slideUp(500);
-                $(".cc-contactpop .box").slideUp(500);
-                $(".cc-contactpop form").slideUp(500);
-                return false;
-            });
-        });
-    </script>
+         // Close Hidden Part
+         $(".cc-contactpop i").click(function () {
+            $(this).slideUp(500);
+            $(".cc-contactpop .box").slideUp(500);
+            $(".cc-contactpop form").slideUp(500);
+            return false;
+         });
+      });
+   </script>
    <script>
       function message(name, mobile, email,) {
          if (email) {
