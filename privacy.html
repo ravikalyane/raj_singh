@@ -216,7 +216,9 @@
                      <div class="col-md-12">
                         <div class="form-group">
                            <label class="lab">Mobile*</label>
-                           <input type="text" name="mobile" id="mobile" placeholder="Mobile">
+                           <!-- <input type="text" name="mobile" id="mobile" placeholder="Mobile"> -->
+                           <input id="mobile" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
+
                         </div>
                      </div>
                      <div class="col-md-12">
@@ -254,7 +256,9 @@
             <input type="text" name="name" id="ola_name" placeholder="Name*" />
          </div>
          <div class="form-group">
-            <input type="text" name="mobile" id="ola_mobile" placeholder="Mobile No*" />
+            <!-- <input type="text" name="mobile" id="ola_mobile" placeholder="Mobile No*" /> -->
+            <input id="ola_mobile" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
+
          </div>
          <div class="form-group">
             <input type="email" name="email" id="ola_email" placeholder="E-mail" />
