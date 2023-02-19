@@ -61,7 +61,7 @@
                   class="whatsapp"><img src="images/whatsapp1.svg" alt="phone"> <span>WhatsApp</span></a>
                <a href="tel:+918104983151">
                   <div class="phone_number">
-                     <img src="images/phnT.svg" alt="phone"> <span>+91 8104983151</span>
+                     <img src="images/phnT.svg" alt="phone"><strong><span>+91 8104983151</span></strong> 
                   </div>
                </a>
             </div>
@@ -79,15 +79,14 @@
    <section class="banner-sec">
       <div class="banner">
          <picture>
-            <source srcset="images/new_banner.png" type="image/png" class="desk">
-            <img src="images/new_banner.png" alt="Prestige Bellanza Banner" class="desk" width="1252" height="537">
+            <source srcset="images/desktop-banner.webp" type="image/png" class="desk">
+            <img src="images/desktop-banner.webp" alt="Prestige Bellanza Banner" class="desk" width="1252" height="537">
          </picture>
          <picture>
-            <source srcset="images/mob-banner-new.png" type="image/png" class="mob">
-            <img src="images/mob-banner-new.png" alt="Prestige Bellanza Banner" class="mob" width="990" height="990">
+            <source srcset="images/mobile-banner.webp" type="image/png" class="mob">
+            <img src="images/mobile-banner.webp" alt="Prestige Bellanza Banner" class="mob" width="990" height="990">
          </picture>
       </div>
-
    </section>
    <br><br>
    <section class="privacy-policy">
@@ -202,7 +201,7 @@
          <div class="modal-content">
             <div class="modal-header modal-header2">
                <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <h4 class="modal-title"><span>Please fill your details</span></h4>
+               <h4 class="modal-title"><span>Request a callback for further details</span></h4>
             </div>
             <div class="modal-body enquery-form">
                <form id="popupform" method="POST" data-netlify="true">
@@ -221,12 +220,12 @@
 
                         </div>
                      </div>
-                     <div class="col-md-12">
+                     <!-- <div class="col-md-12">
                         <div class="form-group">
                            <label class="lab">Email*</label>
                            <input type="text" name="email" id="email" placeholder="Email">
                         </div>
-                     </div>
+                     </div> -->
                   </div>
                   <div class="text-right"><span id="popupresponse"></span>
                      <button class="theme-btn btn-style-one">Submit</button>
@@ -260,9 +259,9 @@
             <input id="ola_mobile" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
 
          </div>
-         <div class="form-group">
+         <!-- <div class="form-group">
             <input type="email" name="email" id="ola_email" placeholder="E-mail" />
-         </div>
+         </div> -->
          <button class="theme-btn btn-style-one">Submit </button>
       </form>
    </div>
