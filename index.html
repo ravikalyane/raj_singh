@@ -387,27 +387,12 @@
                                     <input type="text" class="form-control" maxlength="25" name="name" id="enquire_name" placeholder="Your Name*" required />
                                 </div>
                                 <div class="form-group col-md-12 m-0 p-2">
-                                    <!-- <input type="tel" class="form-control phoneNumberNumeric" name="mobile"
-                                    id="enquire_mobile" placeholder="Mobile No*" required maxlength="10" /> -->
-                                    <input id="enquire_mobile" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
+                                    <input id="enquire_mobile" type="text" minlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
                                 </div>
-                                <!-- <div class="form-group col-md-12 m-0 p-2">
-                                <input class="form-control" name="email" id="enquire_email" type="email"
-                                    placeholder="Email ID" />
-                            </div> -->
                                 <div class="form-group col-md-12 col-12 m-0 p-2" style="display:flex; justify-content:space-between; align-items: center;">
                                     <button type="submit" class="theme-btn btn-style-one ">Submit</button>
                                     <button class="theme-bstn btn-style-one" style="width:100%; margin-left:10px;"><a href="tel:+918104983151" style="color:white">+91 8104983151</a></button>
                                 </div>
-                                <!--Calling icon-->
-                                <!-- <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 10px; padding-top: 6px; background-color: #ba9666; color: #fff;">
-                                    <a href="tel:+918104983151" style="text-decoration: none; color: #fff;">
-                                        <div class="sheak">
-                                            <img src="images/phnT.svg" class="svg" alt="phone" style="height: 20px; margin-bottom: 0px;" />
-                                        </div>
-                                        +91 8104983151
-                                    </a>
-                                </div> -->
                             </div>
                         </form>
                     </div>
@@ -458,7 +443,7 @@
                                             <div class="form-group">
                                                 <label class="lab">Mobile*</label>
                                                 <!-- <input type="text" name="mobile" required id="enquire_mobile1" placeholder="Mobile" /> -->
-                                                <input id="enquire_mobile1" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
+                                                <input id="enquire_mobile1" type="text" minlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
                                             </div>
                                         </div>
                                         <!-- <div class="col-md-12">
@@ -566,7 +551,7 @@
                 </div>
                 <div class="form-group">
                     <!-- <input type="text" name="mobile" id="ola_mobile" required placeholder="Mobile No*" /> -->
-                    <input id="ola_mobile" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
+                    <input id="ola_mobile" type="text" minlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
                 </div>
                 <!-- <div class="form-group">
                 <input type="email" name="email" id="ola_email" placeholder="E-mail" />
