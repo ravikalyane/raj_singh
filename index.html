@@ -33,7 +33,7 @@
                         href="https://api.whatsapp.com/send?phone=+918104983151&text=Hi, I saw details of project from Prestige Bellanza | Yogi Hills Mulund website - http://prestigebellanza.co.in/, kindly call me back. I am interested in buying a new property."
                     >
                         <div class="sheak">
-                            <img src="images/whatsapp.svg" class="svg" alt="whatsapp" />
+                            <img src="images/whatsapp.png" class="svg" alt="whatsapp" />
                         </div>
                         WhatsApp
                     </a>
@@ -131,7 +131,7 @@
                     <li>1.8 acres E-Deck with open to sky experiences</li>
                 </ul>
                 <div class="action-btn-bar">
-                    <a href="javascript:void(0)" data-toggle="modal" data-target="#downloadpdf">Download Brochure</a>
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#FormActive">Download Brochure</a>
                     <a href="javascript:void(0)" data-toggle="modal" data-target="#FormActive" class="right-btn">Enquire Now</a>
                 </div>
             </div>
@@ -422,54 +422,86 @@
         </div>
 
         <div class="modal fade" id="FormActive">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="max-width: 700px;" >
                 <div class="modal-content">
-                    <div class="modal-header modal-header2">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title"><span>Request a callback for further details</span></h4>
-                    </div>
-                    <div class="modal-body enquery-form">
-                        <form method="POST" data-netlify="true" id="popupform" name="popupform" method="POST" role="form">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="lab">Name*</label>
-                                        <input type="text" name="name" required id="enquire_name1" placeholder="Name" />
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="lab">Mobile*</label>
-                                        <!-- <input type="text" name="mobile" required id="enquire_mobile1" placeholder="Mobile" /> -->
-                                        <input id="enquire_mobile1" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
-                                    </div>
-                                </div>
-                                <!-- <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="lab">Email</label>
-                                    <input type="text" name="email" required id="enquire_email1" placeholder="Email" />
-                                </div>
-                            </div> -->
+
+                <div class="row">
+                    <div class="col-md-4 border-right new d-flex justify-content-center align-items-center">
+                        <div class="ml-3 flex-fill align-self-center flex-shrink-1 modal-highlight-bg d-none d-lg-block" style="padding: 15px;">
+                            <p class="modal-highlight-title" style="font-size: 20px; color:#411D21;"><strong>We Promise</strong></p>
+                            <ul class="modal-highlight">
+                                <li><i class="mi mi-support-call" style="padding-left: 30px;"></i><span>&nbsp;&nbsp;&nbsp;&nbsp;Instant Call Back</span></li>
+                                <li><i class="mi mi-support-visit" style="padding-left: 30px;"></i><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free Site Visit</span></li>
+                                <li><i class="mi mi-support-price" style="padding-left: 30px;"></i><span>&nbsp;&nbsp;&nbsp;Unmatched Price</span></li>
+                            </ul>
+                        </div>                    </div>
+                    <div class="col-md-8">
+                            <div class="modal-header modal-header2 pb-0">
+                                <div></div>
+                                <img  src="https://prestige-mulund.com//assets/img/comman/logo.svg" alt="" style="width: 70%;">
+                                <br>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <!-- <h4 class="modal-title text-center mt-2"><span>Register Here And Avail The Best Offers!!
+                                </span></h4> -->
                             </div>
-                            <div class="text-right">
-                                <button type="submit" class="theme-btn btn-style-one">Submit</button>
+                            <div class="modal-body enquery-form pt-0">
+                                <form method="POST" data-netlify="true" id="popupform" name="popupform" method="POST" role="form">
+                                    <p class="text-center mb-2"><strong> Register Here And Avail The <span style="color:red;">Best Offers!!</span></strong></p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="lab">Name*</label>
+                                                <input type="text" name="name" required id="enquire_name1" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="lab">Mobile*</label>
+                                                <!-- <input type="text" name="mobile" required id="enquire_mobile1" placeholder="Mobile" /> -->
+                                                <input id="enquire_mobile1" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="lab">Email</label>
+                                            <input type="text" name="email" required id="enquire_email1" placeholder="Email" />
+                                        </div>
+                                    </div> -->
+                                    </div>
+                                    <div class="text-right">
+                                        <button type="submit" class="theme-btn btn-style-one">Submit</button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                            
+                        </div>
                     </div>
                     <!--Calling icon-->
                     <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 10px; padding-top: 6px; background-color: #ba9666; color: #fff;">
-                        <a href="tel:+918104983151" style="text-decoration: none; color: #fff;">
-                            <div class="sheak">
-                                <img src="images/phnT.svg" class="svg" alt="phone" style="height: 20px; margin-bottom: 0px;" />
-                            </div>
-                            +91 8104983151
-                        </a>
+                        <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+
+                            <a  href="tel:+918104983151" style="text-decoration: none; color: #fff;">
+                                <div class="sheak">
+                                    <img src="images/phnT.svg" class="svg" alt="phone" style="height: 20px; margin-bottom: 0px;" />
+                                </div>
+                               Call Us
+                            </a>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+
+                            <a  href="https://api.whatsapp.com/send?phone=+918104983151&text=Hi, I saw details of project from Prestige Bellanza | Yogi Hills Mulund website - http://prestigebellanza.co.in/, kindly call me back. I am interested in buying a new property." style="text-decoration: none; color: #fff;">
+                                <div class="sheak">
+                                    <img src="images/whatsapp.png" class="svg" alt="whatsapp" style="height: 20px; margin-bottom: 0px;" />
+                                </div>
+                                WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal fade" id="downloadpdf">
+        <!-- <div class="modal fade" id="downloadpdf">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header modal-header2">
@@ -489,23 +521,23 @@
                                     <div class="form-group">
                                         <label class="lab">Mobile*</label>
                                         <!-- <input type="text" name="mobile" required id="brochure_mobile" placeholder="Mobile"> -->
-                                        <input id="brochure_mobile" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
+                                        <!-- <input id="brochure_mobile" type="text" maxlength="10" name="mobile" placeholder="Mobile No*" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" />
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="lab">Email</label>
                                     <input type="text" name="email" id="brochure_email" placeholder="Email">
                                 </div>
                             </div> -->
-                            </div>
+                            <!-- </div>
                             <div class="text-right">
                                 <button type="submit" class="theme-btn btn-style-one">Submit</button>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                     <!--Calling icon-->
-                    <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 10px; padding-top: 6px; background-color: #ba9666; color: #fff;">
+                    <!-- <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 10px; padding-top: 6px; background-color: #ba9666; color: #fff;">
                         <a href="tel:+918104983151" style="text-decoration: none; color: #fff;">
                             <div class="sheak">
                                 <img src="images/phnT.svg" class="svg" alt="phone" style="height: 20px; margin-bottom: 0px;" />
@@ -514,8 +546,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
 
         <div class="cc-contactpop fixed">
             <h3>Schedule <span>Free Site Visit</span> Now</h3>
